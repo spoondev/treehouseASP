@@ -8,9 +8,12 @@ namespace ComicBookSiteV2.Controllers
 {
     public class comicBooksController : Controller
     {
-        public string Detail()
+        public ContentResult Detail()
         {
-            return "Hi from comic land";
+            return new ContentResult()
+            {
+                Content = "Hello from the comic books control"
+            };
         }
     }
 }
